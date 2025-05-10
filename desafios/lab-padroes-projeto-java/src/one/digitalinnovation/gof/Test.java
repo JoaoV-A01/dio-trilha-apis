@@ -1,5 +1,6 @@
 package one.digitalinnovation.gof;
 
+import one.digitalinnovation.gof.facade.Facede;
 import one.digitalinnovation.gof.singleton.SingletonEager;
 import one.digitalinnovation.gof.singleton.SingletonLazy;
 import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
@@ -38,6 +39,8 @@ public class Test {
         robo.mover();
 
         // Facade
+        Facede facede = new Facede();
+        facede.migrarCliente("Venilto", "123456");
 
     }
 }
